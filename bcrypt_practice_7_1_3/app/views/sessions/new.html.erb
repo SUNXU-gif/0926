@@ -1,0 +1,19 @@
+<h1>ログイン画面</h1>
+
+<%= form_with url: login_path, local: true do |f| %>
+  <p>
+    <%= f.label :email, "メールアドレス" %><br>
+    <%= f.text_area :email %>
+  </p>
+  <p>
+    <%= f.label :password, "パスワード" %><br>
+    <%= f.password_field :password %>
+  </p>
+  <%= f.submit "ログイン" %>
+<% end %>
+
+<% if flash[:alert] %>
+  <p style="color:red"><%= flash[:alert] %></p>
+<% end %>
+
+<%= link_to "トップ画面に戻る", root_path %>

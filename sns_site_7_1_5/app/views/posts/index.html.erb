@@ -1,0 +1,20 @@
+<h1>投稿一覧</h1>
+
+<p><%= link_to "新規投稿", new_post_path %></p>
+
+<table class="post-table">
+  <tr>
+    <th>タイトル</th>
+    <th>投稿内容</th>
+    <th>お気に入り数</th>
+    <th></th>
+  </tr>
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.comment %></td>
+      <td>★ <%= post.favorites.count %></td>
+      <td><%= link_to "投稿詳細", post_path(post) %></td>
+    </tr>
+  <% end %>
+</table>

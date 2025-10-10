@@ -1,0 +1,8 @@
+<h1>マイページ画面</h1>
+
+<p>名前：<%= @user.name %></p>
+<p>メールアドレス：<%= @user.email %></p>
+<p>ハッシュ化パスワード：<%= @user.password_digest %></p>
+
+<%= button_to "ログアウト", logout_path, method: :delete %>
+

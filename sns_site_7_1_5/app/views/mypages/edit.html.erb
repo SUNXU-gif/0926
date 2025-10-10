@@ -1,0 +1,8 @@
+<h1>マイページ編集</h1>
+
+<%= form_with model: @user, url: mypage_path(@user), method: :put, local: true do |f| %>
+  <p><%= f.label :name, "名前" %><br><%= f.text_field :name %></p>
+  <p><%= f.label :email, "メールアドレス" %><br><%= f.email_field :email %></p>
+  <p><%= f.label :content, "自己紹介" %><br><%= f.text_area :content %></p>
+  <%= f.submit "更新", class: "btn" %>
+<% end %>

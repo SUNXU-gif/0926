@@ -1,0 +1,7 @@
+<h1>マイページ</h1>
+
+<h2><%= @user.name %></h2>
+<p><strong>メールアドレス：</strong> <%= @user.email %></p>
+<p><strong>自己紹介：</strong><br><%= simple_format(@user.content) %></p>
+
+<%= link_to "マイページ編集", edit_mypage_path(@user), class: "btn btn-green" %>

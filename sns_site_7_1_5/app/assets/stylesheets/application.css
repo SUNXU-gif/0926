@@ -1,0 +1,26 @@
+/* —— 全局 —— */
+.container { max-width: 960px; margin: 24px auto; }
+.center { text-align: center; }
+
+/* —— 顶部蓝色导航（和截图一致的风格） —— */
+.nav { background: #0d47a1; padding: 10px 0; }
+.nav-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; }
+.nav-link { color: #fff; text-decoration: none; margin-right: 16px; }
+.nav-link:hover { text-decoration: underline; }
+.nav-btn { background: transparent; border: none; cursor: pointer; font: inherit; padding: 0; }
+
+/* —— 按钮/提示 —— */
+.btn { padding: 6px 12px; border: 1px solid #333; background: #f6f6f6; }
+.btn-green { background: #2e7d32; color: #fff; border: none; padding: 6px 10px; border-radius: 4px; }
+
+.flash { font-weight: bold; margin: 10px 0; }
+.flash-green { color: #2e7d32; }
+.flash-red { color: #c62828; }
+
+/* —— 表格 —— */
+.post-table { width: 100%; border-collapse: collapse; }
+.post-table th, .post-table td { border: 1px solid #ccc; padding: 8px; }
+
+/* —— 像链接的按钮 —— */
+.link-like { background: none; border: none; padding: 0; color: #1976d2; text-decoration: underline; cursor: pointer; }
+

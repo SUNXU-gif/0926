@@ -1,0 +1,19 @@
+<h1>投稿一覧</h1>
+
+<% @posts.each do |post| %>
+  <article style="margin-bottom:24px;">
+    <p><strong>タイトル：</strong> <%= post.title %></p>
+    <p><strong>投稿内容：</strong> <%= simple_format(post.content) %></p>
+    <p><strong>画像：</strong></p>
+    <% if post.image.attached? %>
+      <%= image_tag post.image, class: "img-300" %>
+    <% else %>
+      <%= image_tag "no_image.png", class: "img-300" %>
+    <% end %>
+    <p>
+      <%= link_to "投稿詳細", post_path(post) %> |
+      <%= link_to "投稿を編集", edit_post_path(post) %> |
+      <%= button_to "投稿を削除", post, method: :delete %>
+    </p>
+  </article>
+<% end %>

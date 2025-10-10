@@ -1,0 +1,19 @@
+/* 布局 */
+.container { max-width: 960px; margin: 24px auto; }
+.center { text-align: center; }
+
+/* 顶部蓝色导航 */
+.nav { background: #0d47a1; padding: 10px 0; }
+.nav-inner { max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; }
+.nav-link { color: #fff; text-decoration: none; margin-right: 16px; }
+.nav-link:hover { text-decoration: underline; }
+.nav-btn { background: transparent; border: none; cursor: pointer; font: inherit; padding: 0; }
+
+/* 图片尺寸要求 */
+.img-300 { width: 300px; height: 300px; object-fit: cover; border: 1px solid #ccc; }
+.img-600 { width: 600px; height: 600px; object-fit: cover; border: 1px solid #ccc; }
+
+/* 提示 */
+.flash { font-weight: bold; margin: 8px 0; }
+.flash-green { color: #2e7d32; }
+.flash-red { color: #c62828; }

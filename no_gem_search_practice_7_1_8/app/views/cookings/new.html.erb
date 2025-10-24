@@ -1,0 +1,12 @@
+<h2>新規料理</h2>
+<%= form_with model: @cooking do |form| %>
+  <label>料理名</label>
+  <%= form.text_field :title %>
+  <label>説明</label>
+  <%= form.text_area :content %>
+  <label>ジャンル</label>
+  <%= form.collection_select(:genre_id, Genre.all, :id, :genre_name, include_blank: "選択して下さい") %>
+  <div class="actions">
+    <%= form.submit "登録" %>
+  </div>
+<% end %>

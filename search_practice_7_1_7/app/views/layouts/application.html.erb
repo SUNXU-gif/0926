@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SearchPractice</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", media: "all" %>
+</head>
+<body>
+  <div style="background-color: orange; padding: 10px;">
+    <%= link_to "新規投稿", new_post_path %> |
+    <%= link_to "ユーザー一覧", mypages_path %> |
+    <%= link_to "投稿一覧", posts_path %> |
+    <%= link_to "ログアウト", logout_path, method: :delete %>
+  </div>
+
+  <%= yield %>
+</body>
+</html>
